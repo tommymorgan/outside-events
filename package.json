@@ -1,0 +1,38 @@
+{
+  "name": "outside-events",
+  "version": "1.0.0",
+  "description": "Listen to events that happen outside your node.",
+  "main": "src/outside-events.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tommymorgan/outside-events"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack-dev-server --hot --config webpack.harness.config.js",
+    "test": "jest --coverage",
+    "posttest": "cat ./coverage/lcov.info | coveralls"
+  },
+  "author": "Tommy Morgan",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.5",
+    "coveralls": "^3.0.2",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.12.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "jest": "^23.5.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "sinon": "^7.2.2",
+    "style-loader": "^0.23.1",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
