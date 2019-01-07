@@ -2,13 +2,14 @@
   "name": "outside-events",
   "version": "1.0.0",
   "description": "Listen to events that happen outside your node.",
-  "main": "src/outside-events.js",
+  "main": "dist/main.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/tommymorgan/outside-events"
   },
   "scripts": {
     "build": "webpack -p",
+    "build:dev": "webpack",
     "start": "webpack-dev-server --hot --config webpack.harness.config.js",
     "test": "jest --coverage",
     "posttest": "cat ./coverage/lcov.info | coveralls"
