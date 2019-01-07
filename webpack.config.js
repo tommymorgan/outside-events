@@ -1,8 +1,6 @@
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-
 module.exports = {
 	entry: "./src/outside-events.js",
-	mode: "production",
+	mode: "development",
 	module: {
 		rules: [{
 			test: /\.less$/,
@@ -19,7 +17,8 @@ module.exports = {
 			loader: "babel-loader",
 		}],
 	},
-	optimization: {
-		minimizer: [new UglifyJsPlugin()],
+	output: {
+		library: "outside-events",
+		libraryTarget: "umd",
 	},
 };
