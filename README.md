@@ -1,5 +1,5 @@
 # Outside Events
-Outside Events let's you listen for events that happen outside the bounds of a
+Outside Events lets you listen for events that happen outside the bounds of a
 specified element.  It was inspired by
 [jQuery outside events](https://github.com/cowboy/jquery-outside-events).
 
