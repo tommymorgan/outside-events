@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1546894512711" clover="3.2.0">
-  <project timestamp="1546894512711" name="All files">
+<coverage generated="1577668966435" clover="3.2.0">
+  <project timestamp="1577668966435" name="All files">
     <metrics statements="43" coveredstatements="43" conditionals="20" coveredconditionals="20" methods="22" coveredmethods="22" elements="85" coveredelements="85" complexity="0" loc="43" ncloc="43" packages="1" files="2" classes="2">
-      <file name="helpers.js" path="/Users/tmorgan/src/outside-events/src/helpers.js">
+      <file name="helpers.js" path="/home/tommy/src/outside-events/src/helpers.js">
         <metrics statements="30" coveredstatements="30" conditionals="16" coveredconditionals="16" methods="16" coveredmethods="16"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="82" type="cond" truecount="2" falsecount="0"/>
@@ -35,7 +35,7 @@
         <line num="53" count="2" type="stmt"/>
         <line num="54" count="2" type="stmt"/>
       </file>
-      <file name="outside-events.js" path="/Users/tmorgan/src/outside-events/src/outside-events.js">
+      <file name="outside-events.js" path="/home/tommy/src/outside-events/src/outside-events.js">
         <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="10" count="7" type="stmt"/>
         <line num="11" count="7" type="stmt"/>
