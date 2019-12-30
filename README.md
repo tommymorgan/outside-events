@@ -11,7 +11,7 @@ reattached.
 `npm i -S outside-events`
 
 ## Usage
-```
+```javascript
 import OutsideEvents from "outside-events";
 
 const el = document.querySelector(".foo");
