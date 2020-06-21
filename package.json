@@ -1,39 +1,49 @@
 {
   "name": "outside-events",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Listen to events that happen outside your node.",
   "main": "dist/main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tommymorgan/outside-events"
+    "url": "https://gitlab.com/tommymorgan/outside-events"
   },
   "scripts": {
     "build": "webpack -p",
     "build:dev": "webpack",
     "start": "webpack-dev-server --hot --config webpack.harness.config.js",
-    "test": "jest --coverage",
-    "posttest": "cat ./coverage/lcov.info | coveralls"
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
   },
   "author": "Tommy Morgan",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
-    "babel-loader": "^8.0.5",
-    "coveralls": "^3.0.2",
-    "css-loader": "^2.1.0",
-    "eslint": "^5.12.0",
-    "eslint-plugin-jest": "^22.1.2",
+    "babel-loader": "^8.1.0",
+    "coveralls": "^3.1.0",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.21.0",
     "jest": "^23.5.0",
-    "less": "^3.9.0",
+    "jsdom": "^15.2.1",
+    "less": "^3.11.3",
     "less-loader": "^4.1.0",
-    "sinon": "^7.2.2",
+    "sinon": "^7.5.0",
     "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.1.1",
-    "webpack": "^4.28.3",
-    "webpack-cli": "^3.2.0",
-    "webpack-dev-server": "^3.1.14"
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
