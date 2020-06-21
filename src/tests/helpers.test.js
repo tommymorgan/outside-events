@@ -59,7 +59,7 @@ test("_mutationCallback calls _onNodeAdded and _onNodeRemoved for each mutation"
 test("_onNodeAdded returns false if there are no added nodes", () => {
 	expect(_onNodeAdded("foo", "foo", {
 		addedNodes: []
-	})).toBe(false);
+	})).toBe(true);
 });
 
 test("_onNodeAdded does not add the listener to document if an interested node is not added", () => {
